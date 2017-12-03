@@ -12,8 +12,6 @@
 		0CDF9EE11FD3B3370022AD68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CDF9EDF1FD3B3370022AD68 /* Main.storyboard */; };
 		0CDF9EE31FD3B3370022AD68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CDF9EE21FD3B3370022AD68 /* Assets.xcassets */; };
 		0CDF9EE61FD3B3370022AD68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CDF9EE41FD3B3370022AD68 /* LaunchScreen.storyboard */; };
-		0CDF9EF11FD3B3380022AD68 /* MobiHomeIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDF9EF01FD3B3380022AD68 /* MobiHomeIOSTests.swift */; };
-		0CDF9EFC1FD3B3380022AD68 /* MobiHomeIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDF9EFB1FD3B3380022AD68 /* MobiHomeIOSUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +40,7 @@
 		0CDF9EE51FD3B3370022AD68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CDF9EE71FD3B3370022AD68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CDF9EEC1FD3B3380022AD68 /* MobiHomeIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobiHomeIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0CDF9EF01FD3B3380022AD68 /* MobiHomeIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiHomeIOSTests.swift; sourceTree = "<group>"; };
-		0CDF9EF21FD3B3380022AD68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CDF9EF71FD3B3380022AD68 /* MobiHomeIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobiHomeIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0CDF9EFB1FD3B3380022AD68 /* MobiHomeIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiHomeIOSUITests.swift; sourceTree = "<group>"; };
-		0CDF9EFD1FD3B3380022AD68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				0CDF9EDA1FD3B3370022AD68 /* MobiHomeIOS */,
-				0CDF9EEF1FD3B3380022AD68 /* MobiHomeIOSTests */,
-				0CDF9EFA1FD3B3380022AD68 /* MobiHomeIOSUITests */,
 				0CDF9ED91FD3B3370022AD68 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,6 +89,12 @@
 		0CDF9EDA1FD3B3370022AD68 /* MobiHomeIOS */ = {
 			isa = PBXGroup;
 			children = (
+				0CDF9F091FD3B4070022AD68 /* Api */,
+				0CDF9F0E1FD3B4740022AD68 /* ViewControllers */,
+				0CDF9F0D1FD3B46B0022AD68 /* ViewModels */,
+				0CDF9F0C1FD3B43B0022AD68 /* Repositories */,
+				0CDF9F0B1FD3B4220022AD68 /* Models */,
+				0CDF9F0A1FD3B4170022AD68 /* Helpers */,
 				0CDF9EDB1FD3B3370022AD68 /* AppDelegate.swift */,
 				0CDF9EDD1FD3B3370022AD68 /* ViewController.swift */,
 				0CDF9EDF1FD3B3370022AD68 /* Main.storyboard */,
@@ -107,22 +105,46 @@
 			path = MobiHomeIOS;
 			sourceTree = "<group>";
 		};
-		0CDF9EEF1FD3B3380022AD68 /* MobiHomeIOSTests */ = {
+		0CDF9F091FD3B4070022AD68 /* Api */ = {
 			isa = PBXGroup;
 			children = (
-				0CDF9EF01FD3B3380022AD68 /* MobiHomeIOSTests.swift */,
-				0CDF9EF21FD3B3380022AD68 /* Info.plist */,
 			);
-			path = MobiHomeIOSTests;
+			path = Api;
 			sourceTree = "<group>";
 		};
-		0CDF9EFA1FD3B3380022AD68 /* MobiHomeIOSUITests */ = {
+		0CDF9F0A1FD3B4170022AD68 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				0CDF9EFB1FD3B3380022AD68 /* MobiHomeIOSUITests.swift */,
-				0CDF9EFD1FD3B3380022AD68 /* Info.plist */,
 			);
-			path = MobiHomeIOSUITests;
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0CDF9F0B1FD3B4220022AD68 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0CDF9F0C1FD3B43B0022AD68 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		0CDF9F0D1FD3B46B0022AD68 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0CDF9F0E1FD3B4740022AD68 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +290,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CDF9EF11FD3B3380022AD68 /* MobiHomeIOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +297,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CDF9EFC1FD3B3380022AD68 /* MobiHomeIOSUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
